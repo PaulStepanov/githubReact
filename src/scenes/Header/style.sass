@@ -1,0 +1,73 @@
+$smallFontSize: 13px
+$buttonInputGroupHeight: 31px 
+
+.Header
+    background-color: $black
+    height: 56px
+
+    display: flex
+    justify-content: center
+
+.HeaderContenr
+    width: $contentWidth
+
+    display: flex
+    flex-flow: raw
+    justify-content: space-between
+
+    height: 100%
+    padding: 0 16px
+
+.leftContent 
+    display: flex
+    flex-flow: raw
+    align-items: center
+
+
+.icon
+    color: white
+    font-size: 32px
+    margin-right: 13px
+
+.buttonInputGroup 
+    height: $buttonInputGroupHeight
+    width: 300px
+
+    display: flex
+    flex-flow: raw 
+
+    button
+        width: 103px
+        height: $buttonInputGroupHeight
+        font-size: $smallFontSize
+        color: $textColorWhite
+
+        border: none !important
+        border-radius: 3px 0 0 3px !important
+
+        padding-left: 8px
+        background-color: rgb(68,71,76)
+
+
+    .searchInputWrapper 
+        width: 196px
+
+        input
+            color: rgb(130,132,135) !important
+            font-size: 13px
+            height: $buttonInputGroupHeight
+
+            background-color: $gray
+            border: none !important
+            border-radius: 0 3px 3px 0  !important
+
+            margin-left: 1px
+
+        input:focus
+            outline: none !important
+            border: none !important
+            box-shadow: none !important
+        input:hover
+            outline: none !important
+            border: none !important
+
