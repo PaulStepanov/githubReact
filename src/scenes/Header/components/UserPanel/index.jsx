@@ -12,7 +12,7 @@ const plusMenu = (
 
 class index extends Component {
   render() {
-    const { iconUrl, isNotifications } = this.props;
+    const { iconUrl } = this.props;
 
     return (
       <div className={style.UserPanel}>
