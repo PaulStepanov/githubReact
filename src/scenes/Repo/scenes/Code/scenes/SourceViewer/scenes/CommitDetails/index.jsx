@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Avatar } from "antd";
 
-import style from "style.sass";
+import style from "./style.sass";
 
 const AVATAR_SIZE = 20;
 
@@ -24,13 +24,21 @@ const index = ({
           style={{ width: AVATAR_SIZE, height: AVATAR_SIZE }}
         />
         <div className={`${style.userName} text-bold`}>{userName}</div>
-        {issueNumber !== undefined && (
+        <div className={style.commitMessage}>{commitMessage}</div>
+
+        {typeof issueNumber !== "undefined" && (
           <div className={style.issueBlock}>
             (<a className={style.issueLink}>#{issueNumber}</a>)
           </div>
         )}
       </div>
-      <div className={style.right} />
+      <div className={style.rightPad}>
+        <span>
+          Latest commit{" "}
+          <span className={style.latestCommitId}>{latestCommitId}</span>{" "}
+          {latestCommitAgoText}
+        </span>
+      </div>
     </div>
   );
 };

@@ -10,7 +10,7 @@ const buttons = [
 ];
 
 const lastCommitDetails = {
-  userVatarUrl: "https://avatars3.githubusercontent.com/u/18052706?s=40&v=4",
+  userAvatarUrl: "https://avatars3.githubusercontent.com/u/18052706?s=40&v=4",
   userName: "Zarabon",
   commitMessage: "Commit message",
   latestCommitId: "1581c3f",

@@ -1,7 +1,22 @@
+$magicMargin: 5px
+$smallFont: 12px  
+
 .CommitDetails
+    height: 42px
+    padding: 0 10px
+    margin-top: 10px
+
     display: flex
     flex-flow: row
     flex-wrap: nowrap 
+    justify-content: space-between
+    align-items: center
+
+    font-size: 13px
+    line-height: 20px
+    color: #586069
+    background-color: #f1f8ff
+    border: 1px solid #c8e1ff
 
 .leftPad,.rightPad
     display: flex
@@ -14,3 +29,11 @@
 .leftPad
     justify-content: flex-end
 
+.userName
+    color: black
+    margin: 0 $magicMargin
+    font-size: $smallFont
+
+.commitMessage
+    margin-left: $magicMargin
+    font-size: $smallFont  
