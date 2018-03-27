@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Carousel } from "antd";
 
+import PropTypes from 'prop-types';
 import NumberElements from "./components/numberElements";
 import StatsGraph from "./components/statsGraph";
 import LanguageStats from "./components/languageStats";
@@ -91,6 +92,10 @@ class index extends Component {
       </div>
     );
   }
+}
+
+index.propTypes = {
+  onSwitch: PropTypes.func
 }
 
 export default index;

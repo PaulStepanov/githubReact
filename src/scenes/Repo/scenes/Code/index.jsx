@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import Switcher from "./components/Switcher/";
+
+import SourceViewer from "./scenes/SourceViewer/";
+import Switcher from "./scenes/Switcher/";
 
 import style from "./style.sass";
 
@@ -12,6 +14,7 @@ class index extends Component {
         <div className={style.codeWrapper}>
           <div className={style.meta}>{TITLE}</div>
           <Switcher />
+          <SourceViewer />
         </div>
       </div>
     );

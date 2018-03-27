@@ -1,0 +1,17 @@
+$borderRadius: 3px
+    
+.ButtonGroup
+    height: $controlPanelButtonHeight !important
+
+.button
+    height: $controlPanelButtonHeight !important
+    border-radius: 0 !important
+    color: black !important
+    
+.button:first-child
+    border-radius: $borderRadius 0 0 $borderRadius !important
+    border-right: 0 
+
+.button:last-child
+    border-radius: 0 $borderRadius  $borderRadius 0 !important
+    border-left: 0 

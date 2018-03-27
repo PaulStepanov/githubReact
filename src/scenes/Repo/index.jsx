@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Header from "./components/Header";
-import Code from "./components/Code";
+import Header from "./scenes/Header";
+import Code from "./scenes/Code";
 
 import style from './style.sass';
 
